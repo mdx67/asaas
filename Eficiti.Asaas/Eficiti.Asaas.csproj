@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FD16970-DF2B-4250-B9A8-FA9D830AAA07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eficiti.Asaas</RootNamespace>
+    <AssemblyName>Eficiti.Asaas</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\City\City.cs" />
+    <Compile Include="Core\City\CityFilter.cs" />
+    <Compile Include="Core\City\ObjectListCity.cs" />
+    <Compile Include="Core\Shared\BillingTypeEnum.cs" />
+    <Compile Include="Core\Shared\CreditCard.cs" />
+    <Compile Include="Core\Customer\Customer.cs" />
+    <Compile Include="Core\Customer\CustomerFilter.cs" />
+    <Compile Include="Core\Shared\Error.cs" />
+    <Compile Include="Core\Shared\ErrorList.cs" />
+    <Compile Include="Core\Shared\FilterExtension.cs" />
+    <Compile Include="Core\Shared\ObjectList.cs" />
+    <Compile Include="Core\Shared\EventEnum.cs" />
+    <Compile Include="Core\Shared\Filter.cs" />
+    <Compile Include="Core\City\ICityRepository.cs" />
+    <Compile Include="Core\City\ICityService.cs" />
+    <Compile Include="Core\Subscription\ISubscriptionRepository.cs" />
+    <Compile Include="Core\Subscription\ISubscriptionService.cs" />
+    <Compile Include="Core\Notification\NotificationFilter.cs" />
+    <Compile Include="Core\Customer\ObjectListCustomer.cs" />
+    <Compile Include="Core\Payment\Payment.cs" />
+    <Compile Include="Core\Customer\ICustomerRepository.cs" />
+    <Compile Include="Core\Payment\IPaymentRepository.cs" />
+    <Compile Include="Core\Notification\INotificationRepository.cs" />
+    <Compile Include="Core\Notification\INotificationService.cs" />
+    <Compile Include="Core\Customer\ICustomerService.cs" />
+    <Compile Include="Core\Payment\IPaymentService.cs" />
+    <Compile Include="Core\Notification\Notification.cs" />
+    <Compile Include="Core\Payment\PaymentFilter.cs" />
+    <Compile Include="Core\Shared\SettingEnum.cs" />
+    <Compile Include="Core\Subscription\Subscription.cs" />
+    <Compile Include="Core\Shared\CycleEnum.cs" />
+    <Compile Include="Core\Subscription\SubscriptionFilter.cs" />
+    <Compile Include="Data\Response.cs" />
+    <Compile Include="Data\UrlList.cs" />
+    <Compile Include="Factory\AsaasSettingsFactory.cs" />
+    <Compile Include="Factory\CityFactory.cs" />
+    <Compile Include="Factory\CustomerFactory.cs" />
+    <Compile Include="Factory\NotificationFactory.cs" />
+    <Compile Include="Factory\PaymentFactory.cs" />
+    <Compile Include="Factory\SubscriptionFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\Repositories\CityRepository.cs" />
+    <Compile Include="Data\Repositories\CustomerRepository.cs" />
+    <Compile Include="Core\AsaasSettings.cs" />
+    <Compile Include="Data\Repositories\PaymentRepository.cs" />
+    <Compile Include="Data\Repositories\NotificationRepository.cs" />
+    <Compile Include="Data\Repositories\SubscriptionRepository.cs" />
+    <Compile Include="Service\CityService.cs" />
+    <Compile Include="Service\CustomerService.cs" />
+    <Compile Include="Service\PaymentService.cs" />
+    <Compile Include="Service\SubscriptionService.cs" />
+    <Compile Include="Service\NotificationService.cs" />
+    <Compile Include="Core\Shared\StatusEnum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

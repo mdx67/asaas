@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eficiti.Asaas", "Eficiti.Asaas\Eficiti.Asaas.csproj", "{7FD16970-DF2B-4250-B9A8-FA9D830AAA07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eficiti.Asaas.Test", "Eficiti.Asaas.Test\Eficiti.Asaas.Test.csproj", "{ACF2CCC6-A6F8-449A-A04C-1EB93FEAF982}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FD16970-DF2B-4250-B9A8-FA9D830AAA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD16970-DF2B-4250-B9A8-FA9D830AAA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD16970-DF2B-4250-B9A8-FA9D830AAA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD16970-DF2B-4250-B9A8-FA9D830AAA07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF2CCC6-A6F8-449A-A04C-1EB93FEAF982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF2CCC6-A6F8-449A-A04C-1EB93FEAF982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF2CCC6-A6F8-449A-A04C-1EB93FEAF982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF2CCC6-A6F8-449A-A04C-1EB93FEAF982}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
